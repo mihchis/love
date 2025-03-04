@@ -1,0 +1,43 @@
+/* Reset default margin, padding, and prevent scrolling */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    background: rgb(0, 0, 0);
+}
+
+/* Full-screen canvas */
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Overlay canvas */
+.canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+/* Child container */
+#child {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -100px;
+    display: none;
+}
+
+/* Styled heading */
+h4 {
+    font-family: "STKaiti";
+    font-size: 40px;
+    color: #b30fb6;
+    position: relative;
+    top: -70px;
+    left: -70px;
+}
